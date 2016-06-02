@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='app'>
+<html lang="en" ng-app='port'>
 <head>
   <meta charset="UTF-8">
   <title>Michael Ferger</title>
@@ -15,11 +15,15 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+<script src="router.js" charset="utf-8"></script>
+<script src="/javascripts/layout/layout.js" charset="utf-8"></script>
 </head>
 <base href="/">
 <body>
-<h1 class='text-center'>Michael Ferger</h1>
-<h3 class='text-center'>mferger92@gmail.com</h3>
-<ui-view></ui-view>
+  <h1 class='text-center'>Michael Ferger</h1>
+  <h3 class='text-center'>mferger92@gmail.com</h3>
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
 </body>
 </html>

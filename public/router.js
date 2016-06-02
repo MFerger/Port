@@ -3,11 +3,11 @@
 
   var dependencies = [
     'ui.router',
-    'ngAnimate'
+    'ngAnimate',
   ]
 
-angular.module('app', dependencies)
-  .config(setupStates)
+angular.module('port', dependencies)
+  .config(setupStates);
 
 setupStates.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider'];
 
@@ -17,7 +17,9 @@ function setupStates ($stateProvider, $urlRouterProvider, $locationProvider, $ht
 
   $stateProvider
     .state('layout', {
-      
+      template: '<layout-page><layout-page>',
+      url: "/"
     })
+
 }
 }());
