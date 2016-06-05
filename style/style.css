@@ -87,3 +87,10 @@ body {
 .modal.and.carousel {
   position: absolute;
 }
+#open-modal-button {
+    position: absolute;
+    top: 30%;
+}
+.wrapper {
+  text-align: center;
+}
