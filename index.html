@@ -1,88 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Michael Ferger</title>
   <title>Bootstrap Modal</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="./style/style.css">
-<script src="./scripts/app.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <!-- <script src="./scripts/bootstrap_modal.js" charset="utf-8"></script> -->
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/animate.css">
+  <!-- <link rel="stylesheet" href="./style/bootstrap_modal.css" media="screen" title="no title" charset="utf-8"> -->
+  <script src="./scripts/app.js" charset="utf-8"></script>
 </head>
-<body>
-<nav class='header'>
-  <img id='logo' src="./images/logo.png" alt="">
-  <h3>Full Stack Jr. Web Developer</h3>
-</nav>
 
-      <!-- <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
-    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade mymodal" role="dialog" tabindex="-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="carousel slide" data-interval="false" data-ride="carousel" id="carousel">
+<body>
+  <nav class='header'>
+    <img id='logo' src="./images/logo.png" alt="">
+    <h3>Full Stack Jr. Web Developer</h3>
+    <h3>
+    <span style="float: right">Michael Ferger</span>
+    <span style="float: left">mferger92@gmail.com</span>
+  </h3>
+  </nav>
+  <div class='projects'>
+    <div class='sites shadowHalf'>
+      <img class='siteImage' src="./images/milk_drop_full.png" alt="">
+      <div class="description">
+        <h1>Milk Drop</h1>
+        <h4>Milk drop was created as a place for over-producting mothers can contact under-producting mothers locally. Users can add a posting which takes the geolocation of your computer and adds a location marker on the map. <a href='https://milkdrop.herokuapp.com'>Here </a>is a link to the live site.</h4>
+        <h2>Technologies Used:</h2>
+        <h4>Express, Node, JQuery, Mapbox API, SASS, OAuth Integration, Pivitol Tracker and Bootstrap</h4>
+      </div>
+    </div>
+  </div>
+  <div class='projects'>
+    <div class='sites shadowHalf'>
+      <img class='siteImage' src="./images/bracket_maker.png" alt="">
+      <div class="description">
+        <h1>Bracket Maker</h1>
+        <h4>Bracket Maker was designed and targeted for people who need an easy way to keep track of tabletop games with friends. This can be used for pool, ping pong, foosball and much more. Users are able to create/join a bracket of any name, add players and determine who is the winner of each match. This is a app for iPhone and Andriod currently currently in the process of being implemented into the App Store and Google Play Store. <a href='http://mferger.github.io/Bracket-Maker-FE'>Here </a>is a link to the live site.</h4>
+        <h2>Technologies Used:</h2>
+        <h4>AngularJS, Express, Node, JQuery, Ionic Framework, Cardova, Mongo, Mongoose, Pivitol Tracker and Bootstrap</h4>
+      </div>
+    </div>
+  </div>
+  <div class='projects'>
+    <div class='sites shadowHalf'>
+      <a data-toggle="modal" href="#myModal"><img class='siteImage' src="./images/tessaract_main_page.png" alt=""></a>
+      <div class="description">
+        <h1>Tesseract</h1>
+        <h4>Tesseract was built in 6 hours at a hackathon for people who want a simple elegent timer. This can be used to time and save anything, but is primarily used for solving rubiks cubes. Users can login and save their times, as well as compare to the sites leaderboards against other players. <a href='http://tesseractjs.herokuapp.com/'>Here </a>is a link to the live site.</h4>
+        <h2>Technologies Used:</h2>
+        <h4>Express, Node, JQuery, Bootstrap</h4>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carousel-example-generic" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h3>1st item</h3>
-                    <button aria-label="Close" class="btn btn-primary" data-dismiss="modal">Close Window </button>
-                  </div>
+                <img src="./images/tessaract_main_page.png" alt="" />
+                <div class="carousel-caption">
+                  <h3>Tessaract Landing Page</h3>
                 </div>
               </div>
               <div class="item">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <h3>2nd item</h3>
-                    <button aria-label="Close" class="btn btn-primary" data-dismiss="modal">Close Window </button>
-                  </div>
+                <img src="./images/tessaract_timer.png" alt="" />
+                <div class="carousel-caption">
+                  <h3>Tessaract Timer Page</h3>
                 </div>
               </div>
               <div class="item">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <h3>3rd item</h3>
-                    <button aria-label="Close" class="btn btn-primary" data-dismiss="modal">Close Window </button>
-                  </div>
+                <img src="./images/tessaract_leaderboards.png" alt="" />
+                <div class="carousel-caption">
+                  <h3>Leaderboard Page</h3>
                 </div>
               </div>
               <div class="item">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <h3>4th item</h3>
-                    <button aria-label="Close" class="btn btn-primary" data-dismiss="modal">Close Window </button>
+                <img src="./images/tessaract_mytimes.png" alt="" />
+                <div class="carousel-caption">
+                  <h3 class='test'>My Times Page</h3>
                 </div>
               </div>
             </div>
-            <a class="left carousel-control" data-slide="prev" href="#carousel" role="button"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" data-slide="next" href="#carousel" role="button"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+
           </div>
         </div>
       </div>
     </div>
-    </div> -->
-    <div class='projects'>
-      <div class='sites shadowHalf'>
-    <img class='siteImage' src="./images/milk_drop_full.png" alt="">
-    <div class="description">
-      <h1>Milk Drop</h1>
-      <h4>Milk drop was created as a place for over-producting mothers can contact under-producting mothers locally. Users can add a posting which takes the geolocation of your computer and adds a location marker on the map. <a href='https://milkdrop.herokuapp.com'>Here </a>is a link to the live site.</h4>
-      <h2>Technologies Used:</h2>
-      <h4>Express, Node, JQuery, Mapbox API, SASS, OAuth Integration and Bootstrap</h4>
-    </div>
   </div>
-</div>
-    <div class='projects'>
-      <div class='sites shadowHalf'>
-    <img class='siteImage' src="./images/bracket_maker.png" alt="">
-    <div class="description">
-      <h1>Bracket Maker</h1>
-      <h4>Bracket Maker was designed and targeted for people who need an easy way to keep track of tabletop games with friends. This can be used for pool, ping pong, foosball and much more. Users are able to create/join a bracket of any name, add players and determine who is the winner of each match. This is a app for iPhone and Andriod currently currently in the process of being implemented into the App Store and Google Play Store. <a href='http://mferger.github.io/Bracket-Maker-FE'>Here </a>is a link to the live site.</h4>
-      <h2>Technologies Used:</h2>
-      <h4>AngularJS, Express, Node, JQuery, Ionic Framework, Cardova, Mongo, Mongoose and Bootstrap</h4>
-    </div>
-  </div>
-</div>
+
 </body>
+
 </html>
