@@ -90,10 +90,10 @@ body {
   color: #fff;
 }
 .modal.modal-fullscreen .modal-footer {
-  border-color: rgba(0, 0, 0, .3);
+  border-color: rgba(0, 0, 0, .2);
 }
-#myModal .carousel-caption {
-  background-color: rgba(0, 0, 0, .3);
+#tessaractModal .carousel-caption {
+  background-color: rgba(0, 0, 0, .2);
   bottom: -80%;
   -webkit-transition: bottom 1s;
   transition: bottom 1s;
@@ -102,10 +102,44 @@ body {
   height: 75px;
 }
 
-#myModal .item.active >.carousel-caption {
+#tessaractModal .item.active >.carousel-caption {
   bottom: 0;
 }
-.modal-content {
+#tessaractModal .modal-content {
+  width: 200%;
+  margin-left: -50%;
+}
+#bracketModal .carousel-caption {
+  background-color: rgba(0, 0, 0, .2);
+  bottom: -80%;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  width: 100%;
+  margin-left: -20%;
+  height: 75px;
+}
+
+#bracketModal .item.active >.carousel-caption {
+  bottom: 0;
+}
+#bracketModal .modal-content {
+  width: 200%;
+  margin-left: -50%;
+}
+#milkDropModal .carousel-caption {
+  background-color: rgba(0, 0, 0, .2);
+  bottom: -80%;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  width: 100%;
+  margin-left: -20%;
+  height: 75px;
+}
+
+#milkDropModal .item.active >.carousel-caption {
+  bottom: 0;
+}
+#milkDropModal .modal-content {
   width: 200%;
   margin-left: -50%;
 }
