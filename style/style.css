@@ -82,6 +82,112 @@ body {
   height: 125px;
   width: 170px;
 }
+#ichael {
+  height: 60px;
+  width: 250px;
+  margin-left: -11%;
+  margin-top: 5%;
+  position: absolute;
+}
+#erger {
+  height: 60px;
+  width: 250px;
+  margin-left: 17.3%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 3s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 3s;
+	animation:fadeIn ease-in 3s
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+.absolute {
+  postion: absolute;
+}
+@-webkit-keyframes m
+{
+    from {
+        left: 39%;
+    }
+    to {
+        left: 27.5%;
+    }
+}
+@keyframes m
+{
+    from {
+        left: 39%;
+    }
+    to {
+        left: 27.5%;
+    }
+}
+a#m {
+    text-decoration: none;
+    left: 27.5%;
+    position: absolute;
+    -webkit-animation: m 4s;
+    animation: m 4s;
+}
+
+a#m img {
+    -webkit-transition: all 4s ease-in 2s;
+    -moz-transition: all 4s ease-in 2s;
+    -o-transition: all 4s ease-in 2s;
+    -ms-transition: all 4s ease-in 2s;
+    transition-duration: 4s;
+    }
+@-webkit-keyframes f
+{
+    from {
+        left: 47.5%;
+    }
+    to {
+        left: 57.5%;
+    }
+}
+@keyframes f
+{
+    from {
+        left: 47.5%;
+    }
+    to {
+        left: 57.5%;
+    }
+}
+a#f {
+    text-decoration: none;
+    left: 57.5%;
+    position: absolute;
+    -webkit-animation: f 4s;
+    animation: f 4s;
+}
+
+a#f img {
+    -webkit-transition: all 4s ease-in 2s;
+    -moz-transition: all 4s ease-in 2s;
+    -o-transition: all 4s ease-in 2s;
+    -ms-transition: all 4s ease-in 2s;
+    transition-duration: 4s;
+    }
+
 .modal.modal-fullscreen .modal-content {
   background: rgba(0, 0, 0, .3);
 }
