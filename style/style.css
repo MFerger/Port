@@ -109,23 +109,6 @@ body {
   width: 200%;
   margin-left: -50%;
 }
-#bracketModal .carousel-caption {
-  background-color: rgba(0, 0, 0, .2);
-  bottom: -80%;
-  -webkit-transition: bottom 1s;
-  transition: bottom 1s;
-  width: 100%;
-  margin-left: -20%;
-  height: 75px;
-}
-
-#bracketModal .item.active >.carousel-caption {
-  bottom: 0;
-}
-#bracketModal .modal-content {
-  width: 200%;
-  margin-left: -50%;
-}
 #milkDropModal .carousel-caption {
   background-color: rgba(0, 0, 0, .2);
   bottom: -80%;
@@ -140,6 +123,23 @@ body {
   bottom: 0;
 }
 #milkDropModal .modal-content {
+  width: 200%;
+  margin-left: -50%;
+}
+#bracketModal .carousel-caption {
+  background-color: rgba(0, 0, 0, .2);
+  bottom: -80%;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  width: 100%;
+  margin-left: -20%;
+  height: 75px;
+}
+
+#bracketModal .item.active >.carousel-caption {
+  bottom: 0;
+}
+#bracketModal .modal-content {
   width: 200%;
   margin-left: -50%;
 }
