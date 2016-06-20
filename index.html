@@ -10,38 +10,53 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-  <!-- <script src="./scripts/bootstrap_modal.js" charset="utf-8"></script> -->
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/animate.css">
-  <!-- <link rel="stylesheet" href="./style/bootstrap_modal.css" media="screen" title="no title" charset="utf-8"> -->
-  <script src="./scripts/app.js" charset="utf-8"></script>
 </head>
 
-<body>
+<body id='body' class='stop-scrolling'>
+  <nav class="navbar nav-custom navbar-fixed-top" data-spy="affix" data-offset-top="80" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-th-list"></span>
+            </button>
+            <span><img class="rc" src="images/logo.png"></span>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#aboutMe">About Me</a>
+                </li>
+                <li>
+                    <a href="#design">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="images/resume.pdf">Resume</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+  <div id='landingPage'>
+    <a id="m"><img id='logo' src="./images/M.svg"></a>
+    <img id='ichael' class='fade-in' src="./images/ICHAEL.png">
+    <a id="f"><img id='logo' src="./images/F.svg"></a>
+    <img id='erger' class='fade-in' src="./images/ERGER.png">
+    <img id='webDev' class='fade-in2' src="./images/webdev.png">
+  </div>
   <nav class='header'>
-    <div class='absolute'>
-    <a id="m"><img id='logo' src="./images/M.svg" alt=""></a>
-  </div>
-  <div class='relative'>
-    <img id='ichael' class='fade-in' src="./images/ICHAEL.png" alt="">
-  </div>
-    <div class='absolute'>
-    <a id="f"><img id='logo' src="./images/F.svg" alt=""></a>
-  </div>
-  <div class='relative'>
-    <img id='erger' class='fade-in' src="./images/ERGER.png" alt="">
-  </div>
-
     <h3>Full Stack Jr. Web Developer</h3>
-    <a href="images/resume.pdf">Click to see my resume</a>
     <h3>
-    <!-- <span style="float: right">Michael Ferger</span> -->
-    <span style="float: left">mferger92@gmail.com</span>
   </h3>
   </nav>
   <div class='projects'>
     <div class='sites shadowHalf'>
-      <a data-toggle="modal" href="#milkDropModal"><img class='siteImage' src="./images/milk_drop_full.png" alt=""></a>
+      <a data-toggle="modal" href="#milkDropModal"><img class='siteImage' src="./images/milk_drop_full.png"></a>
       <div class="description">
         <h1>Milk Drop</h1>
         <h4>Milk drop was created as a place for over-producing mothers can contact under-producing mothers locally. Users can add a posting which takes the geolocation of your computer and adds a location marker on the map. <a href='https://milkdrop.herokuapp.com'>Here </a>is a link to the live site.</h4>
@@ -65,25 +80,25 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img class='mdImg' src="./images/milk_drop_full.png" alt="" />
+                <img class='mdImg' src="./images/milk_drop_full.png" />
                 <div class="carousel-caption">
                   <h3>Milk Drop Landing Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img class='mdImg' src="./images/create_posting.png" alt="" />
+                <img class='mdImg' src="./images/create_posting.png" />
                 <div class="carousel-caption">
                   <h3>Create Posting Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img class='mdImg' src="./images/faq.png" alt="" />
+                <img class='mdImg' src="./images/faq.png" />
                 <div class="carousel-caption">
                 <h3>FAQ Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img class='mdImg' src="./images/tips.png" alt="" />
+                <img class='mdImg' src="./images/tips.png" />
                 <div class="carousel-caption">
                   <h3 class='test'>Pasteurization Tips Page</h3>
                 </div>
@@ -103,10 +118,10 @@
 
   <div class='projects'>
     <div class='sites shadowHalf'>
-      <a data-toggle="modal" href="#bracketModal"><img class='siteImage' src="./images/bracket_maker.png" alt=""></a>
+      <a data-toggle="modal" href="#bracketModal"><img class='siteImage' src="./images/bracket_maker.png"></a>
       <div class="description">
         <h1>Bracket Maker</h1>
-        <h4>Bracket Maker was designed and targeted for people who need an easy way to keep track of tabletop games with friends. This can be used for pool, ping pong, foosball and much more. Users are able to create/join a bracket of any name, add players and determine who is the winner of each match. This is a app for iPhone and Andriod currently currently in the process of being implemented into the App Store and Google Play Store. <a href='http://mferger.github.io/Bracket-Maker-FE'>Here </a>is a link to the live site.</h4>
+        <h4>Bracket Maker was designed and targeted for people who need an easy way to keep track of tabletop games with friends. Users are able to create/join a bracket of any name, add players and determine who is the winner of each match. <a href='https://github.com/MFerger/Bracket-Maker-FE'>Here </a>is a link to the codebase.</h4>
         <h2>Technologies Used:</h2>
         <h4>AngularJS, Express, Node, JQuery, Ionic Framework, Cardova, Mongo, Mongoose, Pivitol Tracker and Bootstrap</h4>
       </div>
@@ -126,25 +141,25 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img src="./images/bracket_maker.png" alt="" />
+                <img src="./images/bracket_maker.png" />
                 <div class="carousel-caption">
                   <h3>Bracket Maker Landing Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/create_bracket.png" alt="" />
+                <img src="./images/create_bracket.png" />
                 <div class="carousel-caption">
                   <h3>Create Bracket Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/join_bracket.png" alt="" />
+                <img src="./images/join_bracket.png" />
                 <div class="carousel-caption">
                   <h3>Join Bracket Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/filled_out_bracket.png" alt="" />
+                <img src="./images/filled_out_bracket.png" />
                 <div class="carousel-caption">
                   <h3 class='test'>Fully Filled Out Bracket</h3>
                 </div>
@@ -164,7 +179,7 @@
 
   <div class='projects'>
     <div class='sites shadowHalf'>
-      <a data-toggle="modal" href="#tessaractModal"><img class='siteImage' src="./images/tessaract_main_page.png" alt=""></a>
+      <a data-toggle="modal" href="#tessaractModal"><img class='siteImage' src="./images/tessaract_main_page.png"></a>
       <div class="description">
         <h1>Tesseract</h1>
         <h4>Tesseract was built in 6 hours at a hackathon for people who want a simple elegent timer. This can be used to time and save anything, but is primarily used for solving rubiks cubes. Users can login and save their times, as well as compare to the sites leaderboards against other players. <a href='http://tesseractjs.herokuapp.com/'>Here </a>is a link to the live site.</h4>
@@ -186,25 +201,25 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img src="./images/tessaract_main_page.png" alt="" />
+                <img src="./images/tessaract_main_page.png" />
                 <div class="carousel-caption">
                   <h3>Tessaract Landing Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/tessaract_timer.png" alt="" />
+                <img src="./images/tessaract_timer.png" />
                 <div class="carousel-caption">
                   <h3>Tessaract Timer Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/tessaract_leaderboards.png" alt="" />
+                <img src="./images/tessaract_leaderboards.png" />
                 <div class="carousel-caption">
                   <h3>Leaderboard Page</h3>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/tessaract_mytimes.png" alt="" />
+                <img src="./images/tessaract_mytimes.png" />
                 <div class="carousel-caption">
                   <h3 class='test'>My Times Page</h3>
                 </div>
@@ -223,6 +238,7 @@
     </div>
   </div>
 
+  <script src="./scripts/app.js" charset="utf-8"></script>
 </body>
 
 </html>

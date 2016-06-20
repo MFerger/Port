@@ -1,3 +1,6 @@
+(function() {
+	'use strict';
+
 $('.carousel').carousel();
 $('#myModal').modal()
 function toggleC(){
@@ -8,3 +11,9 @@ function toggleC(){
 	});
 	caption.slideToggle();
 	}
+$('#landingPage').on('click', function() {
+    $('#landingPage').slideUp('slow', 'swing')
+		$('#body').removeClass('stop-scrolling')
+});
+
+}());
