@@ -17,7 +17,7 @@
 	});
 	$('#aboutMe').click(function() {
 		$('html, body').animate({
-			scrollTop: $(document).height()
+			scrollTop: '1500px'
 		}, 2500);
 		return false;
 	});
@@ -27,4 +27,5 @@
 		}, 2000);
 		return false;
 	});
+	
 }());

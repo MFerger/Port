@@ -140,7 +140,6 @@ h1, h2, h3, h4, h5 {
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
-
 	-webkit-animation-duration:1s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
@@ -285,7 +284,6 @@ a#f img {
   margin-left: -20%;
   height: 75px;
 }
-
 #bracketModal .item.active >.carousel-caption {
   bottom: 0;
 }
@@ -487,4 +485,48 @@ button {
   background-color: white;
   margin-left: 10%;
   margin-bottom: 5%;
+  border-radius: 5px;
+  color: rgb(108, 158, 242);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.left:hover {
+  float:left;
+  width:20%;
+  border-radius: 5px;
+  background-color: rgb(235, 69, 69);
+  margin-left: 10%;
+  margin-bottom: 5%;
+  color: white;
+  -ms-transform: scale(1.25);
+  -ms-transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 10px 0px #757575;
+  box-shadow: 0px 5px 20px 0px #757575;
+  z-index: 2;
+  -webkit-transition: all 300ms ease-in;
+  -webkit-transform: scale(1.05);
+ -ms-transition: all 300ms ease-in;
+  -ms-transform: scale(1.05);
+  -moz-transition: all 300ms ease-in;
+  -moz-transform: scale(1.05);
+  transition: all 300ms ease-in;
+  transform: scale(1.05);
+}
+.footer {
+  background-color: white;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding-top: 17px;
 }
