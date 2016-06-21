@@ -1,5 +1,5 @@
 body {
-  background: rgb(32, 208, 232) !important;
+  background: rgb(195, 248, 255) !important;
 }
 h1, h2, h3, h4, h5 {
   font-family: "Share Tech Mono", serif;
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  background-color: rgb(237, 159, 55);
+  background-color: rgb(252, 197, 122);
 }
 #logo {
   align: auto;
@@ -337,38 +337,6 @@ button {
 	padding: 0;
   margin: 0;
 }
-.contact {
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: rgb(108, 158, 242);
-}
-.contact-left {
-	background-color: rgb(108, 158, 242);
-	color: #fff;
-	padding: 50px;
-    margin-left: -15px;
-    margin-right: -15px;
-    text-align: center;
-}
-.contact-right {
-	background-color: #fff;
-	color: rgb(108, 158, 242);
-	padding: 50px;
-    text-align: center;
-}
-.contact-btn {
-	background-color: #fff;
-	color: rgb(108, 158, 242);
-	padding: 0px 50px;
-	border: 2px solid rgb(108, 158, 242);
-}
-.contact-btn:hover {
-	background-color: rgb(108, 158, 242);
-	color: #fff;
-	-webkit-transition: all .35s ease;
-	-o-transition: all .35s ease;
-	transition: all .35s ease;
-}
 .mainHeading {
 	background-color: rgb(108, 158, 242);
 	color: #fff;
@@ -429,25 +397,6 @@ button {
         color:  rgb(108, 158, 242);
         outline: none;
     }
-    /*.contact {
-        border-width: 1px 0;
-        height: 400px;
-        background-image: linear-gradient(121deg, rgb(108, 158, 242) 50%, #fff 50%);
-    }
-    .contact-left{
-        background-color: transparent;
-        padding-top: 100px;
-        color: #fff;
-        text-align: left;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .contact-right{
-        padding-top: 200px;
-        color: #fff;
-        float: right;
-        background-color: transparent;
-    }*/
 }
 @media (max-width: 767px) {
     .navbar-collapse {
@@ -506,4 +455,36 @@ button {
 	h2 {
 		font-size: 130%;
 	}
+}
+.profilePic {
+  float: right;
+  border-radius: 50%;
+  margin: 10px;
+}
+.aboutContent {
+  display: inline-block;
+  overflow: auto;
+}
+.aboutMe {
+  background-color: rgb(183, 224, 247);
+}
+.aboutHeader {
+  font-size: 55px;
+  padding-left: 20px;
+}
+.aboutDescription {
+  background-color: white;
+  width: 70%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.aboutText {
+  padding: 10px;
+}
+.left {
+  float:left;
+  width:20%;
+  background-color: white;
+  margin-left: 10%;
+  margin-bottom: 5%;
 }
