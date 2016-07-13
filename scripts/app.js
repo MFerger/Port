@@ -10,15 +10,14 @@
 		});
 		caption.slideToggle();
 	}
-	$('#landingPage').on('click', function() {
-		$('html, body').animate({
-			scrollTop: '0px'
-		}, 0);
-		});
 		setTimeout(function(){
 				$(".fadeOut").remove();
+				$('#body').removeClass('stop-scrolling')
     }, 3200);
-		$('#body').removeClass('stop-scrolling')
+		setTimeout(function(){
+			$('html, body').animate({
+			 		scrollTop: '0px'}, 0);
+    }, 2000);
 	$('#aboutMe').click(function() {
 		$('html, body').animate({
 			scrollTop: '1500px'
