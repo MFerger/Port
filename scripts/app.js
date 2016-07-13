@@ -1,6 +1,5 @@
 (function() {
 	'use strict';
-
 	$('.carousel').carousel();
 	$('#myModal').modal()
 	function toggleC(){
@@ -12,8 +11,11 @@
 		caption.slideToggle();
 	}
 	$('#landingPage').on('click', function() {
+		$('html, body').animate({
+			scrollTop: '0px'
+		}, 0);
 		$('#landingPage').slideUp({duration: 2000});
-		$('#body').removeClass('stop-scrolling')
+		// $('#body').removeClass('stop-scrolling')
 	});
 	$('#aboutMe').click(function() {
 		$('html, body').animate({
@@ -27,5 +29,5 @@
 		}, 2000);
 		return false;
 	});
-	
+
 }());

@@ -1,5 +1,5 @@
 body {
-  background: rgb(195, 248, 255) !important;
+  background: rgb(191, 191, 191) !important;
 }
 h1, h2, h3, h4, h5 {
   font-family: "Share Tech Mono", serif;
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  background-color: rgb(252, 197, 122);
+  background-color: rgba(51, 131, 234, 0.32);
 }
 #logo {
   align: auto;
@@ -124,11 +124,31 @@ h1, h2, h3, h4, h5 {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
 @-webkit-keyframes fadeIn2 { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn2 { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn2 { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 0.5s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 0.5s;
+	animation:fadeIn ease-in 0.5s
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+.fadeIn {
 	opacity:0;  /* make things invisible upon start */
 	-webkit-animation:fadeIn ease-in 3s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 	-moz-animation:fadeIn ease-in 3s;
@@ -136,6 +156,21 @@ h1, h2, h3, h4, h5 {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
   animation-delay: 3s;;
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+.fadeOut {
+	opacity:1;  /* make things invisible upon start */
+	-webkit-animation:fadeOut ease-in 2s;  /* call our keyframe named fadeOut, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeOut ease-in 2s;
+	animation:fadeOut ease-in 2s
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;;
 
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
@@ -146,12 +181,12 @@ h1, h2, h3, h4, h5 {
 }
 .fade-in2 {
 	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 4s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn ease-in 4s;
-	animation:fadeIn ease-in 4s
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s;;
+	-webkit-animation:fadeIn ease-in 1s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1s;
+	animation:fadeIn ease-in 1s
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;;
 
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
@@ -184,16 +219,21 @@ a#m {
     left: 22.5%;
     margin-top: 17%;
     position: absolute;
-    -webkit-animation: m 4s;
-    animation: m 4s;
+    -webkit-animation: m 1s;
+    animation: m 1s;
 }
-
+.middle {
+  position: absolute;
+  font-size: 70px;
+  padding-left: 32.5%;
+  padding-top: 20%;
+}
 a#m img {
-    -webkit-transition: all 4s ease-in 2s;
-    -moz-transition: all 4s ease-in 2s;
-    -o-transition: all 4s ease-in 2s;
-    -ms-transition: all 4s ease-in 2s;
-    transition-duration: 4s;
+    -webkit-transition: all 1.5s ease-in 1s;
+    -moz-transition: all 1.5s ease-in 1s;
+    -o-transition: all 1.5s ease-in 1s;
+    -ms-transition: all 1.5s ease-in 1s;
+    transition-duration: 1s;
     }
 @-webkit-keyframes f
 {
@@ -218,16 +258,16 @@ a#f {
     margin-top: 17%;
     left: 52.5%;
     position: absolute;
-    -webkit-animation: f 4s;
-    animation: f 4s;
+    -webkit-animation: f 1s;
+    animation: f 1s;
 }
 
 a#f img {
-    -webkit-transition: all 4s ease-in 2s;
-    -moz-transition: all 4s ease-in 2s;
-    -o-transition: all 4s ease-in 2s;
-    -ms-transition: all 4s ease-in 2s;
-    transition-duration: 4s;
+    -webkit-transition: all 1.5s ease-in 1s;
+    -moz-transition: all 1.5s ease-in 1s;
+    -o-transition: all 1.5s ease-in 1s;
+    -ms-transition: all 1.5s ease-in 1s;
+    transition-duration: 1s;
     }
 
 .modal.modal-fullscreen .modal-content {
@@ -299,15 +339,15 @@ a#f img {
     height: 80px;
     z-index: 999;
     padding: 10px;
-    background-color: rgb(108, 158, 242);
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgba(0, 0, 0, 0.18);
     font-size: 150%;
-    color: #fff;
+    color: rgb(108, 158, 242);
     -webkit-transition: all .35s ease;
     -o-transition: all .35s ease;
     transition: all .35s ease;
 }
-.nav-custom.affix {
+/*.nav-custom.affix {
     width: 100%;
 	background-color: rgba(255, 255, 255, 1);
 	color: rgb(108, 158, 242);
@@ -316,7 +356,7 @@ a#f img {
 	-webkit-transition: all .35s ease;
 	-o-transition: all .35s ease;
 	transition: all .35s ease;
-}
+}*/
 .nav-custom .rc {
 	color: rgb(108, 158, 242);
 	padding: -5px;
@@ -336,8 +376,8 @@ button {
   margin: 0;
 }
 .mainHeading {
-	background-color: rgb(108, 158, 242);
-	color: #fff;
+	background-color: white;
+	color: rgb(108, 158, 242);
 	padding: 5px 20px;
 	border-radius: 0px 20px 0px 20px;
 }
@@ -387,7 +427,7 @@ button {
     }
     .nav-custom a:link, .nav-custom a:visited, .nav-custom a:hover, .nav-custom a:active {
         text-decoration: none;
-        color: #fff;
+        color: rgb(108, 158, 242);
         outline: none;
     }
     .nav-custom.affix a:link, .nav-custom.affix a:visited, .nav-custom.affix a:hover, .nav-custom.affix a:active {
@@ -458,6 +498,7 @@ button {
   float: right;
   border-radius: 50%;
   margin: 10px;
+  padding-right: 25px;
 }
 .aboutContent {
   display: inline-block;
@@ -479,7 +520,7 @@ button {
 .aboutText {
   padding: 10px;
 }
-.left {
+.leftLinks {
   float:left;
   width:20%;
   background-color: white;
@@ -501,7 +542,7 @@ button {
   transition: all 200ms ease-in;
   transform: scale(1);
 }
-.left:hover {
+.leftLinks:hover {
   float:left;
   width:20%;
   border-radius: 5px;
