@@ -14,9 +14,11 @@
 		$('html, body').animate({
 			scrollTop: '0px'
 		}, 0);
-		$('#landingPage').slideUp({duration: 2000});
-		// $('#body').removeClass('stop-scrolling')
-	});
+		});
+		setTimeout(function(){
+				$(".fadeOut").remove();
+    }, 3200);
+		$('#body').removeClass('stop-scrolling')
 	$('#aboutMe').click(function() {
 		$('html, body').animate({
 			scrollTop: '1500px'

@@ -4,7 +4,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Share Tech Mono", serif;
 }
-#landingPage {
+.fadeOut {
     background-color:rgb(166, 182, 185);
     position:fixed;
     width:100%;
