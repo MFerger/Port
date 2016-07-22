@@ -20,8 +20,8 @@
     }, 2000);
 	$('#aboutMe').click(function() {
 		$('html, body').animate({
-			scrollTop: '1500px'
-		}, 2500);
+			scrollTop: $("#aboutMeSection").offset().top - 80
+		}, 2000);
 		return false;
 	});
 	$('#projects').click(function() {
@@ -30,5 +30,4 @@
 		}, 2000);
 		return false;
 	});
-
 }());
