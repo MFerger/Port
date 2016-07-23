@@ -52,7 +52,7 @@ h4 {
 }
 .sites {
     width: 80vw;
-    padding-left: 15px;
+    padding-left: 5px;
     padding-top: 20px;
 }
 
@@ -111,30 +111,6 @@ h4 {
     height: 100%;
     overflow: hidden;
 }
-.shadow {
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);
-}
-.shadow:hover {
-    -ms-transform: scale(1.25);
-    -webkit-box-shadow: 3px 3px 5px 6px #757575;
-    box-shadow: 3px 3px 5px 6px #757575;
-    z-index: 2;
-    -webkit-transition: all 300ms ease-in;
-    -webkit-transform: scale(1.02);
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.02);
-    -moz-transition: all 300ms ease-in;
-    -moz-transform: scale(1.02);
-    transition: all 300ms ease-in;
-    transform: scale(1.02);
-}
 .shadowHalf {
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1);
@@ -148,16 +124,16 @@ h4 {
 .shadowHalf:hover {
     -ms-transform: scale(1.05);
     -webkit-box-shadow: 3px 3px 5px 6px #757575;
-    box-shadow: 1px 1px 2px 3px #757575;
+    box-shadow: 5px 5px 10px 3px #757575;
     z-index: 2;
     -webkit-transition: all 300ms ease-in;
-    -webkit-transform: scale(1.02);
+    -webkit-transform: scale(1.01);
     -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.02);
+    -ms-transform: scale(1.01);
     -moz-transition: all 300ms ease-in;
-    -moz-transform: scale(1.02);
+    -moz-transform: scale(1.01);
     transition: all 300ms ease-in;
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -173,7 +149,7 @@ h4 {
 @keyframes fadeIn2 { from { opacity:0; } to { opacity:1; } }
 
 
-.fade-in {
+/*.fade-in {
 	opacity:0;  /* make things invisible upon start */
 
 -webkit-animation:fadeIn ease-in 0.5s;
@@ -258,7 +234,7 @@ webDev
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     animation-duration: 1s;
-}
+}*/
 .middle {
     position: absolute;
     width: 80%;
@@ -307,6 +283,26 @@ webDev
 }
 #rollingAdventureModal .carousel-caption {
     background-color: rgba(0, 0, 0, .2);
+    bottom: -80vw;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
+    width: 100vw;
+    margin-left: -20vw;
+    height: 75px;
+}
+#rollingAdventureModal .item.active>.carousel-caption {
+    bottom: 0;
+}
+#rollingAdventureModal .modal-content {
+    width: 95vw;
+}
+@media (min-width: 767px) {
+#rollingAdventureModal .modal-content {
+    width: 200%;
+    margin-left: -50%;
+}
+#rollingAdventureModal .carousel-caption {
+    background-color: rgba(0, 0, 0, .2);
     bottom: -80%;
     -webkit-transition: bottom 1s;
     transition: bottom 1s;
@@ -314,12 +310,6 @@ webDev
     margin-left: -20%;
     height: 75px;
 }
-#rollingAdventureModal .item.active>.carousel-caption {
-    bottom: 0;
-}
-#rollingAdventureModal .modal-content {
-    width: 200%;
-    margin-left: -50%;
 }
 #milkDropModal .carousel-caption {
     background-color: rgba(0, 0, 0, .2);
@@ -334,6 +324,22 @@ webDev
     bottom: 0;
 }
 #milkDropModal .modal-content {
+    width: 200%;
+    margin-left: -50%;
+}
+  #milkDropModal .carousel-caption {
+    background-color: rgba(0, 0, 0, .2);
+    bottom: -80%;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
+    width: 100%;
+    margin-left: -20%;
+    height: 75px;
+  }
+  #milkDropModal .item.active>.carousel-caption {
+    bottom: 0;
+  }
+  #milkDropModal .modal-content {
     width: 200%;
     margin-left: -50%;
 }
@@ -521,11 +527,11 @@ button {
     width: 90vw;
 }
 .aboutMe {
-    background-color: rgb(183, 224, 247);
+    /*background-color: rgb(183, 224, 247);*/
 }
 .aboutHeader {
     font-size: 55px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 .aboutDescription {
     background-color: white;
@@ -540,6 +546,10 @@ button {
   float: left;
   width: 20%;
   background-color: white;
+  border:1px solid #aaa;
+  -webkit-box-shadow:3px 3px 4px #888;
+     -moz-box-shadow:3px 3px 4px #888;
+          box-shadow:3px 3px 4px #888;
   display: inline-block;
   margin-left: 12%;
   margin-bottom: 5%;
